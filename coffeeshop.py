@@ -89,7 +89,7 @@ class Order:
         self.check_order()
 
     def check_order(self):
-        #Here we make the Order quack.
+        #Here we make the Items quack.
         try:
             self.totalprice = self.getprice()
             self.totalcost = self.getcost()
@@ -148,7 +148,8 @@ class Shift:
             raise
                 
     def check_shift(self):
-    #Calculate total price and cost over all orders
+        '''Calculate total price and cost over all orders; this will fail if the Orders
+        don't have totalprice and totalcost attributes''' 
         if self.orders: #Checking that at least one order has been assigned to the shift
             grossprice = 0
             grosscost = 0
