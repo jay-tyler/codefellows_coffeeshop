@@ -2,9 +2,9 @@
 ##Overview
 
 In this particular example, there are three basic container types:
-Item 
-Order
-Shift
+- Item 
+- Order
+- Shift
 
 An Item is a thing on a menu with a business cost and a retail price.
 An Order consists of one or more item; may also track the customer name, and tracks 
